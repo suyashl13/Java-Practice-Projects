@@ -21,8 +21,8 @@ public class DataTypes {
 
         byte a3 = 10;
         byte b4 = 20;
-        int t = a * b;
-        System.out.println(t);
+        int x = a * b;
+        System.out.println(x);
 
     }
 }
