@@ -1,4 +1,4 @@
-class Calculator {
+class MyCalculator {
 
     final float pi = 3.14f; // constant variable (immutable and global for class)
 
@@ -25,7 +25,7 @@ public class ObjectAndClassDemo {
         System.out.println("Demo of calculator class");
 
 
-        Calculator c = new Calculator();
+        MyCalculator c = new MyCalculator();
         System.out.println(c.add(10, 20));
         System.out.println(c.sub(10, 20));
         System.out.println(c.mul(10, 20));
