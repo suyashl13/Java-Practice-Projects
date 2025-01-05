@@ -40,6 +40,5 @@ public class ConstructorDemo {
 
         defaultHuman.display();
         suyash.display();
-
     }    
 }
