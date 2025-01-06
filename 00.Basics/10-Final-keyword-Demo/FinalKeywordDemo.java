@@ -16,9 +16,7 @@ class FinalDemo {
 
 class SomeOtherClass extends FinalDemo  {
     // Cannot override the final method from FinalDemoJava(67109265)
-    // public void show() {
-
-    // }
+    // public void show() { }
 }
 
 public class FinalKeywordDemo {
