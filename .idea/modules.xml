@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/09-OOPs/09-OOPs.iml" filepath="$PROJECT_DIR$/09-OOPs/09-OOPs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16-Interfaces/16-Interfaces.iml" filepath="$PROJECT_DIR$/16-Interfaces/16-Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-Practice-Projects.iml" filepath="$PROJECT_DIR$/Java-Practice-Projects.iml" />
+    </modules>
+  </component>
+</project>
