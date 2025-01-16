@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="alien" class="org.example.Alien" scope="singleton" autowire="byName">-->
+<!--&lt;!&ndash;        <constructor-arg value="Suyash"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg value="21"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg ref="laptop1"/>&ndash;&gt;-->
+<!--        <property name="age" value="21"/>-->
+<!--&lt;!&ndash;        <property name="computer" ref="laptop1"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+    <bean id="alien" class="org.example.Alien" scope="singleton" autowire="byType">
+        <!--        <constructor-arg value="Suyash"/>-->
+        <!--        <constructor-arg value="21"/>-->
+        <!--        <constructor-arg ref="laptop1"/>-->
+        <property name="age" value="21"/>
+        <!--        <property name="computer" ref="laptop1"/>-->
+    </bean>
+
+    <bean id="laptop" class="org.example.Laptop">
+        <property name="ram" value="8"/>
+        <property name="brand" value="Apple"/>
+    </bean>
+
+    <bean id="desktop" class="org.example.Desktop" primary="true" lazy-init="true"/>
+</beans>
