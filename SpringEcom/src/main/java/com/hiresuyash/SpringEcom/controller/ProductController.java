@@ -63,4 +63,17 @@ public class ProductController {
 
     }
 
+
+    @GetMapping("/products/{productId}/image")
+    public ResponseEntity<byte[]> getImageByProductId(@PathVariable int productId) {
+        Optional<Product> product = productService.getProductById(productId);
+
+        return product.map(product1 -> new ResponseEntity<>(
+                product1.getImageData(),
+                HttpStatus.OK
+        )).orElseGet(() -> new ResponseEntity<>(null, HttpStatus.NOT_FOUND));
+
+    }
+
+
 }
